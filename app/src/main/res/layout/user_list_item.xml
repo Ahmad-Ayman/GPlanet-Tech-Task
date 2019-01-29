@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingStart="@dimen/med_dp"
+    android:paddingLeft="@dimen/med_dp"
+    android:paddingEnd="@dimen/med_dp"
+    android:paddingRight="@dimen/med_dp"
+    android:paddingBottom="@dimen/med_dp">
+
+
+    <LinearLayout
+        android:id="@+id/userDataView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/med_dp"
+        android:background="@drawable/strokedividerlight"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/xsmall_dp"
+            android:layout_marginLeft="@dimen/xsmall_dp"
+            android:layout_marginTop="@dimen/med_dp"
+            android:layout_marginEnd="@dimen/xsmall_dp"
+            android:layout_marginRight="@dimen/xsmall_dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/xxsmall_dp"
+                android:text="@string/user_name_TIT"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userNameValueTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:padding="@dimen/small_dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                tools:text="Ahmed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/xsmall_dp"
+            android:layout_marginLeft="@dimen/xsmall_dp"
+            android:layout_marginEnd="@dimen/xsmall_dp"
+            android:layout_marginRight="@dimen/xsmall_dp"
+            android:layout_marginBottom="@dimen/med_dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/xxsmall_dp"
+                android:text="@string/number_of_pages_TIT"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/noofpagesTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:padding="@dimen/small_dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                tools:text="30" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

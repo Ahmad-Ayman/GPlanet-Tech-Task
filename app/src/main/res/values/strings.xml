@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GPlanetTask</string>
+    <string name="gplanetlogo">GPlanetLogo</string>
+    <string name="username_title">Username</string>
+    <string name="show_data">Show Data</string>
+    <string name="percentage">Percentage:</string>
+    <string name="error_icon">error icon</string>
+    <string name="userOrder">User Order</string>
+    <string name="spinner_hint">Please Select User</string>
+    <string name="useridKey">USERS_IDS_KEY</string>
+    <string name="usernameKey">USERS_NAMES_KEY</string>
+    <string name="selectedItemKey">SELECTED_ITEM_KEY</string>
+    <string name="number_of_pages_TIT">Number of Read Pages : </string>
+    <string name="user_name_TIT">User Name :</string>
+    <string name="retry">Retry</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShowDataActivity">
+
+    <ImageView
+        android:id="@+id/error_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/error_icon"
+        android:scaleType="center"
+        android:src="@drawable/no_intent_connection"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:id="@+id/viewGroupforPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/percentageTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:padding="8dp"
+            android:text="@string/percentage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/greySecondary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/percentageValueTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:text="0.428" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewGroupforUserOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewGroupforPercentage"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/userOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:padding="8dp"
+            android:text="@string/userOrder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/greySecondary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userOrderValueTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:text="2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userListTitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewGroupforUserOrder"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Users List"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userListTitleTV"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_usersList"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
